@@ -44,3 +44,8 @@
 
 ### 6.数据结构思考总结：
 看输出 -> 定结构 -> 选容器(单条记录用struct，多条记录用vector<struct>) -> 做持久化 -> 想细节
+
+## level 2.1
+- common.h（公共头文件）：存放结构体（Product、SaleRecord）和所有全局变量（catalog、isAdminMode 等）的声明。
+- admin.h 和 admin.cpp（管理员模块）：存放管理员模式的所有逻辑。
+- main.cpp（主程序）：只负责读取数据、开启主循环、并在主循环里根据模式调用不同的函数。
